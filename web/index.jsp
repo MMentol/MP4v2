@@ -70,6 +70,11 @@
         </style>
     </head>
     <body style="margin:0; padding:0">
+        <%
+          response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");  
+            
+            
+            %>
         <div class="container">
             <div class="headbanner">
                 <h1 style="display:inline">

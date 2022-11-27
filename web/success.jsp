@@ -60,6 +60,7 @@
 
     <body style="margin:0; padding:0">
         <%if(session.getAttribute("purch")!="true"){response.sendRedirect("index.jsp");
+        response.setHeader("Cache-Control","no-cache, no-store, must-revalidate"); 
         } %>
         
         <form action="shop.jsp" method="post">

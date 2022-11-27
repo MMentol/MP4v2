@@ -74,7 +74,22 @@ public class loginval extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+          String username = (String) request.getParameter("uname");
+        String password = (String) request.getParameter("pass");
+
+        if (password.equals("1234")) {
+            ArrayList cart = new ArrayList();
+            int totalcost = 0;
+            HttpSession mysession = request.getSession();
+            mysession.setAttribute("user", username);
+            mysession.setAttribute("pass", password);
+            mysession.setAttribute("itemlist", cart);
+            mysession.setAttribute("total", totalcost);
+            response.sendRedirect("shop.jsp");
+        }else{
+        
+        response.sendRedirect("error.jsp");
+        }
     }
 
     /** 

@@ -59,6 +59,9 @@
 </head>
 
 <body style="margin:0; padding:0">
+    <%
+        response.setHeader("Cache-Control","no-cache, no-store, must-revalidate"); 
+        %>
     <form action="index.jsp" method="post">
 <div class="container">
 

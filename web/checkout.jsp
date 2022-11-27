@@ -65,6 +65,7 @@
         <form action="purchase" method="post">   
             <%
                 ArrayList it_list = (ArrayList) session.getAttribute("itemlist");
+                response.setHeader("Cache-Control","no-cache, no-store, must-revalidate"); 
 
             %>
             <div class="container">
