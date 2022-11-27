@@ -134,7 +134,9 @@
                 response.sendRedirect("index.jsp");
             }
         %>
-
+        <form action="Logout">
+            <input type="submit" value="Logout">
+        </form>
 
         <div class="container">
             <form action="requesthandle" method="post"> 
