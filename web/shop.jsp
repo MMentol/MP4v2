@@ -178,8 +178,7 @@
                         </div>
                         <div class="total">
                             <a>My Total : $[<% out.print(session.getAttribute("total"));%>]</a><br />
-                            <a style="font-size:14px">Total Qty: [<% ArrayList il = (ArrayList) session.getAttribute("itemlist");
-                       out.print(il.size());%>]</a><br />
+                            
                             <input name="chkout" type="submit" value="Checkout" />
                         </div>
                     </div>
