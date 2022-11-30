@@ -7,55 +7,114 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : Arcus
 */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
 html, body {
   height: 100%;
   width: 100%;
 }
-header {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  background-color: #800000;
-  justify-content: space-between;
+
+header{
+  display:flex;
+  justify-content: flex-end;
   align-items: center;
-  position: fixed;
-  top: 0;
+  padding: 30px 10px;
+  background-color: #90ee09;
 }
 
-#logo {
-  height: 40px;
-  max-width: 100vw;
-  margin: 5px;
-  padding: .5rem;
-  background-color: #A0D7DC;
-  border-radius: 25px;
+header h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: white;
+  text-decoration: none;
+  
 }
 
-h1{
+.logo{
+  width: 75px;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: auto;
+  order: 3;
+}
+
+footer{
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 175px;
+  width: 100vw;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  font-family: 'Courier New';
-  color: #A0D7DC;
-  font-weight: 900;
 }
 
-main {
-  padding-top: 70px;
+footer button{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
 
-footer {
-  max-width: 1280px;
-  max-height: 100%;
-  margin: 30px auto;
-  padding:15px;
-  background-color: #A0D7DC;
-  border-radius: 5px;
+main{
+  justify-content: center;
+    align-items: center;
+  flex: 1 1 auto;
+    display: flex;
 }
 
-h3{
+main h1 {
+  position: relative;
+  color: #ffffff;  
+  font-size: 4rem;
+  line-height: 0.9;
   text-align: center;
-  font-family: "Lucida Console";
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
-p{
+main p{
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  color: black;  
+  font-size: 3rem;
+  line-height: 0.9;
   text-align: center;
+}
+
+.bodyImage{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyImage::before {    
+      content: "";
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
 }
