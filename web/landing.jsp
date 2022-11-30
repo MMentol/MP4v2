@@ -19,11 +19,11 @@
     <img class="logo" src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" alt="logo">
     <nav>
       <ul class="nav_links">
-        <li><a href="#">Home</li>
-        <li><a href="#">Inventory</li>
+        <li><a href="landing.jsp">Home</li>
+        <li><a href="shop.jsp">Inventory</li>
       </ul>
     </nav>
-    <a class="cta" href="#"><button>Login</button></a>
+    <a class="cta" href="index.jsp"><button>Login</button></a>
   </header>
 
   <main>
