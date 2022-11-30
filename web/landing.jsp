@@ -39,7 +39,7 @@
           <form name="redirect-buttons" action="landingProcess.do"  method="post">
             <div class="level-1">
               <input class="common-button margin-right" type="submit" value="Check Inventory" name="generateTicket">
-              <input class="common-button" type="submit" value="Login" name="checkResults">
+              <a class="common-button" href="index.jsp"><button>Login</button></a>
             </div>
           </form>
         </div>                
