@@ -39,11 +39,15 @@
           <form name="redirect-buttons" action="landingProcess.do"  method="post">
             <div class="level-1">
               <input class="common-button margin-right" type="submit" value="Check Inventory" name="generateTicket">
-              <a class="common-button" href="index.jsp"><button>Login</button></a>
+              <a class="common-button" href="index.jsp">Login</a>
+              <input class="common-button" type="submit" value="Documentation" name="checkResults">
             </div>
           </form>
         </div>                
       <br>
+      <div>
+        <p>The only store who sells fresh produce</p>
+      </div>
     </div>
     </div>
   </main>
