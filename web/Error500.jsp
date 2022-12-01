@@ -17,17 +17,20 @@
 
 <body>
   <header>
-    <img id="logo" src="Images/gslogo.png" />
-    <h1>Game Suggestions</h1>
+    <img class="logo" src="https://t3.ftcdn.net/jpg/03/11/87/52/360_F_311875255_d57wDCwlZxdtOEwsnmXLHkV1r29i1R2U.jpg" alt="logo">
+    <h1>Bountiful Baskets</h1>
   </header>
   
-  <main>
-    <h1>Yikes</h1>
-    <p> You found yourself in the most common error mate, sorry</p>
+  <main style="background-color: orange;">
+    <div class="bodyImage">
+    <p> Oh No! It looks like you found yourself in an Error 500 Internal Server Error but don't worry! Just click the button down below to go back to the login page to try again</p>
+    </div>
   </main>
   
-  <footer>
-    <h3>So Sad: Error 500 </h3>
+  <footer style="background-color: white;">
+    <a href="index.jsp">
+      <button>Click Here to go back to the Login</button>
+    </a>
   </footer>
 </body>
 </html>
