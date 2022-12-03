@@ -1,0 +1,262 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 Dec 2022, 8:21:08 pm
+    Author     : Arcus
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+:root{
+    /*    Colors!     */
+    --whitish: black;
+    --extremes: white;
+    --primary: #90ee09;
+    
+    /*    Text!     */
+    --headings: 'Montserrat', sans-serif;
+    --body-text: 'Source Sans Pro', sans-serif;    
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.logo{
+  width: 75px;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: auto;
+  order: 3;
+  
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+header{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10px;
+  background-color: #90ee09
+}
+
+nav{
+  order: 1;
+}
+
+.cta{
+  order: 2;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li:nth-child(1){
+  padding: 0 20px 0 0;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: white;
+}
+
+button{
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(255,255,255, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: rgba(255,255,255, 0.8);
+}
+
+footer{
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 175px;
+  width: 100vw;
+  padding: 10px 10px 0px 10px;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.footer-content p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.left-half{
+  float:left;
+  width: 50%;
+}
+
+.right-half{
+  float:right;
+  width: 50%;
+}
+
+main{
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  display: flex;
+  font-family: Calibri, Helvetica, sans-serif;  
+}
+
+.bodyImage{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyImage::before {    
+      content: "";
+      background-image: url('https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0;
+}
+
+.logo2{
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  opacity: 1.0;
+}
+
+main p{
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  color: black;  
+  font-size: 2.5rem;
+  line-height: 0.9;
+  text-align: left;
+}
+.input_box{
+  margin: 15px auto;
+  width: 80%;
+  border-bottom: 1px solid orange;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.up{
+  resize:horizontal; 
+  width: 300px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid orange;
+}
+
+input::placeholder {
+    font-size: 2rem;
+}
+
+.login-button{
+  resize:horizontal; 
+  width:200px;
+  margin: 40px auto 20px;
+  display: block;
+  outline: none;
+  padding: 10px 0;
+  border: 1px solid white;
+  cursor: pointer;
+  background: orange;
+  color: white;
+  font-size: 16px;
+  border-radius: 10%;
+}
+
+.main-body{
+     margin: auto;    
+    padding: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+
+.left-half{
+   width: 40%;  
+    height: 100%;
+    min-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.whitespace{
+   width: 5%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.right-half{
+  width: 60%;
+    height: 100%;
+    min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
