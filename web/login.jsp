@@ -7,7 +7,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-
+ <%
+          response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");  
+            
+            
+            %>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -28,7 +32,7 @@
   </header>
    
    <main>
-     <div class="bodyImage">
+       <%--  <div class="bodyImage"> --%>
      <div class="main-body">
        <div class="left-half">
          <div class="logo-left">
@@ -38,8 +42,8 @@
        </div>
        <div class="whitespace">  </div>
        <div class="right-half">
-         <div class="user-info">
-           <form name="user-input" action="loginval" method="post">
+         <div class="user-info"> 
+           <form action="loginval" method="post">
              <table>
                <tr>
                  <td><input class="input_box up" id="name" name="uname" type="text" /></td>
@@ -55,7 +59,7 @@
          </div>
        </div>
      </div>
-     </div>
+     <%-- </div> --%>
    </main>
 
    <footer style="background-color: white;">

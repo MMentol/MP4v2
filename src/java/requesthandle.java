@@ -84,7 +84,7 @@ public class requesthandle extends HttpServlet {
 
         } else if (logout != null) {
             mysession.invalidate();
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("login.jsp");
         } else if (pressdel != null) {
 
             Item item_to_Delete = (Item) mycart.get(Integer.parseInt(pressdel));
