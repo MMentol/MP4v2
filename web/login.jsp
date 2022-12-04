@@ -42,10 +42,10 @@
            <form name="user-input" action="loginval" method="post">
              <table>
                <tr>
-                 <td><input class="input_box up" id="name" name="uname" type="text" placeholder="Username"/></td>
+                 <td><input class="input_box up" id="name" name="uname" type="text" /></td>
                </tr>
                <tr>
-                 <td><input class="input_box up" id="pas" name="pass" type="password" placeholder="Password"/></td>
+                 <td><input class="input_box up" id="pas" name="pass" type="password" /></td>
                </tr>
                <tr>
                  <td><input class="login-button" type="submit" value="Submit"/></td>
